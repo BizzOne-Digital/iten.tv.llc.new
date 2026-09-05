@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 
 export default function Hero() {
   return (
-    <section className="relative h-[92vh] min-h-[640px] w-full overflow-hidden bg-bg">
+    <section className="relative aspect-video min-h-[620px] max-h-[85vh] w-full overflow-hidden bg-bg">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url(/hero-bagger.png)" }}
@@ -16,16 +16,15 @@ export default function Hero() {
         preload="auto"
         poster="/hero-bagger.png"
         className="absolute inset-0 block h-full w-full object-cover object-center"
-        style={{ objectFit: "cover", objectPosition: "center" }}
+        style={{ objectFit: "cover", objectPosition: "center", transform: "scale(1.4)" }}
       >
         <source src="/bagtagfilms.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-bg/20" />
-      <div className="absolute inset-0 bg-gradient-to-r from-bg/90 via-bg/30 to-bg/70" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,rgba(0,0,0,0.6)_100%)]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-bg/90 via-bg/10 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-bg/85 via-bg/20 to-transparent" />
 
-      <div className="relative z-10 h-full mx-auto max-w-7xl px-6 sm:px-8 flex flex-col justify-center">
+      <div className="absolute inset-0 z-10 mx-auto max-w-7xl px-6 sm:px-8 flex flex-col justify-center">
         <p className="animate-fade-up mb-4 font-display uppercase tracking-[0.4em] text-sm text-orange-bright">
           A Documentary Film Series
         </p>
