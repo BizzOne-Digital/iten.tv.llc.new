@@ -1,18 +1,19 @@
-import Image from "next/image";
 import { PlayCircle, ChevronDown } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 export default function Hero() {
   return (
     <section className="relative h-[92vh] min-h-[640px] w-full overflow-hidden">
-      <Image
-        src="/hero-bagger.png"
-        alt="Custom chopped bagger motorcycle, the star of Bagged & Tagged on iTEN.TV"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-center scale-105"
-      />
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/hero-bagger.png"
+        className="absolute inset-0 h-full w-full object-cover object-center scale-105"
+      >
+        <source src="/bagtagfilms.mp4" type="video/mp4" />
+      </video>
 
       <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-bg/20" />
       <div className="absolute inset-0 bg-gradient-to-r from-bg/90 via-bg/30 to-bg/70" />
