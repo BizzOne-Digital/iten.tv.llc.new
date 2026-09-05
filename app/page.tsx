@@ -24,27 +24,27 @@ const filmOneCredits = [
 ];
 
 const filmTwoGuests = [
-  { name: "Curtis Hofmann", role: "Hofmann Designs" },
-  { name: "Paul Yaffe", role: "Paul Yaffe Originals" },
-  { name: "Satya Kraus", role: "Kraus Motor Co." },
-  { name: "The Bad Azz Baggerz", role: "Crew" },
-  { name: "Coby Klein", role: "Speed by Design" },
-  { name: "James Bonner", role: "JBA Custom Cycles" },
-  { name: "Nick Trask", role: "Trask Performance" },
-  { name: "Justin B. Umbs", role: "Superstition HD, AZ" },
-  { name: "Kyle Collings", role: "Coonyz Customs Choppers" },
+  { name: "Curtis Hofmann", role: "Hofmann Designs", image: "/new/starring_001.jpg" },
+  { name: "Paul Yaffe", role: "Paul Yaffe Originals", image: "/new/starring_002.jpg" },
+  { name: "Satya Kraus", role: "Kraus Motor Co.", image: "/new/starring_003.jpg" },
+  { name: "The Bad Azz Baggerz", role: "Crew", image: "/new/starring_004.jpg" },
+  { name: "Coby Klein", role: "Speed by Design", image: "/new/starring_005.jpg" },
+  { name: "James Bonner", role: "JBA Custom Cycles", image: "/new/starring_006.jpg" },
+  { name: "Nick Trask", role: "Trask Performance", image: "/new/starring_007.jpg" },
+  { name: "Justin B. Umbs", role: "Superstition HD, AZ", image: "/new/starring_008.jpg" },
+  { name: "Kyle Collings", role: "Coonyz Customs Choppers", image: "/new/starring_009.jpg" },
 ];
 
 const behindTheScenes = [
-  { name: "Filming at Bad Azz Baggers" },
-  { name: "Hangin' with Coonyz Custom Choppers", role: "On location, part one" },
-  { name: "Hangin' with Coonyz Custom Choppers", role: "On location, part two" },
-  { name: "Talkin' Bikes at Inland Empire" },
-  { name: "Speed by Design", role: "One of our favs" },
-  { name: "The Original & #1 Built Bike", role: "By SBD" },
-  { name: "Clean, Classy and Stylish", role: "...with a bit of get up & go" },
-  { name: "What Kind Of Frankenstein Concept", role: "Have we here?" },
-  { name: "“What Film Crew?”", role: "...I'm busy working" },
+  { name: "Filming at Bad Azz Baggers", image: "/new/bts_001.jpg" },
+  { name: "Hangin' with Coonyz Custom Choppers", role: "On location, part one", image: "/new/bts_002.jpg" },
+  { name: "Hangin' with Coonyz Custom Choppers", role: "On location, part two", image: "/new/bts_003.jpg" },
+  { name: "Talkin' Bikes at Inland Empire", image: "/new/bts_004.jpg" },
+  { name: "Speed by Design", role: "One of our favs", image: "/new/bts_005.jpg" },
+  { name: "The Original & #1 Built Bike", role: "By SBD", image: "/new/bts_006.jpg" },
+  { name: "Clean, Classy and Stylish", role: "...with a bit of get up & go", image: "/new/bts_007.jpg" },
+  { name: "What Kind Of Frankenstein Concept", role: "Have we here?", image: "/new/bts_008.jpg" },
+  { name: "“What Film Crew?”", role: "...I'm busy working", image: "/new/bts_009.jpg" },
 ];
 
 export default function Home() {
