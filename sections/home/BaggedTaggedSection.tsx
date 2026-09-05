@@ -7,21 +7,21 @@ const highlights = [
     title: "Interviews",
     description:
       "Featuring in-depth interviews with tips, tricks and myths about building a custom bagger — straight from the builders and owners.",
-    image: undefined as string | undefined,
+    image: "/new/interviews.jpg" as string | undefined,
   },
   {
     icon: Music2,
     title: "Music",
     description:
       "A soundtrack built to suit these bikes. Original music from some of the best composers in the gaming industry.",
-    image: undefined as string | undefined,
+    image: "/new/speaker.jpg" as string | undefined,
   },
   {
     icon: Sparkles,
     title: "Unique",
     description:
       "Watch something unique. This isn't some ol' bike film like the rest — time to break away from the sheep.",
-    image: undefined as string | undefined,
+    image: "/new/baggers.jpg" as string | undefined,
   },
 ];
 
