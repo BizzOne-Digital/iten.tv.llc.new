@@ -3,14 +3,20 @@ import Button from "@/components/ui/Button";
 
 export default function Hero() {
   return (
-    <section className="relative h-[92vh] min-h-[640px] w-full overflow-hidden">
+    <section className="relative h-[92vh] min-h-[640px] w-full overflow-hidden bg-bg">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url(/hero-bagger.png)" }}
+      />
       <video
         autoPlay
         muted
         loop
         playsInline
+        preload="auto"
         poster="/hero-bagger.png"
-        className="absolute inset-0 h-full w-full object-cover object-center scale-105"
+        className="absolute inset-0 block h-full w-full object-cover object-center"
+        style={{ objectFit: "cover", objectPosition: "center" }}
       >
         <source src="/bagtagfilms.mp4" type="video/mp4" />
       </video>
