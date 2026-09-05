@@ -12,15 +12,15 @@ import NewsPreview from "@/sections/home/NewsPreview";
 import CTASection from "@/sections/home/CTASection";
 
 const filmOneCredits = [
-  { name: "Dirty Bird Concepts" },
-  { name: "Sinthium Custom Paint" },
-  { name: "Trask Performance" },
-  { name: "Jim Nasi Customs" },
-  { name: "Kaotic Designs" },
-  { name: "Jeff Goldsburg", role: "Original Builders" },
-  { name: "Custom Manufacturers" },
-  { name: "Josh Rundled", role: "Pro Bike Mechanics" },
-  { name: "Picture Gallery", role: "Want to see some cool bikes?" },
+  { name: "Dirty Bird Concepts", image: "/new/portfolio_pic1.jpg" },
+  { name: "Sinthium Custom Paint", image: "/new/portfolio_pic2.jpg" },
+  { name: "Trask Performance", image: "/new/portfolio_pic4.jpg" },
+  { name: "Jim Nasi Customs", image: "/new/portfolio_pic3.jpg" },
+  { name: "Kaotic Designs", image: "/new/portfolio_pic5.jpg" },
+  { name: "Jeff Goldsbury", role: "Original Builders", image: "/new/portfolio_pic6.jpg" },
+  { name: "Vegas Croc", role: "Custom Manufacturers", image: "/new/portfolio_pic7.jpg" },
+  { name: "Josh Rundled", role: "Riverside Harley Davidson", image: "/new/portfolio_pic8.jpg" },
+  { name: "Picture Gallery", role: "Want to see some cool bikes?", image: "/new/gallery.jpg" },
 ];
 
 const filmTwoGuests = [

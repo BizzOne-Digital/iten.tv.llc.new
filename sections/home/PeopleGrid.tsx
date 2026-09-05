@@ -4,6 +4,7 @@ import PlaceholderTile from "@/components/ui/PlaceholderTile";
 type Person = {
   name: string;
   role?: string;
+  image?: string;
 };
 
 type PeopleGridProps = {
@@ -36,7 +37,12 @@ export default function PeopleGrid({
 
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-5">
           {people.map((person, index) => (
-            <PlaceholderTile key={`${person.name}-${index}`} name={person.name} role={person.role} />
+            <PlaceholderTile
+              key={`${person.name}-${index}`}
+              name={person.name}
+              role={person.role}
+              image={person.image}
+            />
           ))}
         </div>
       </div>
