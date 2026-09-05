@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mic, Music2, Sparkles } from "lucide-react";
+import { Mic, Music2, Sparkles, ImageIcon } from "lucide-react";
 
 const highlights = [
   {
@@ -7,18 +7,21 @@ const highlights = [
     title: "Interviews",
     description:
       "Featuring in-depth interviews with tips, tricks and myths about building a custom bagger — straight from the builders and owners.",
+    image: undefined as string | undefined,
   },
   {
     icon: Music2,
     title: "Music",
     description:
       "A soundtrack built to suit these bikes. Original music from some of the best composers in the gaming industry.",
+    image: undefined as string | undefined,
   },
   {
     icon: Sparkles,
     title: "Unique",
     description:
       "Watch something unique. This isn't some ol' bike film like the rest — time to break away from the sheep.",
+    image: undefined as string | undefined,
   },
 ];
 
@@ -83,16 +86,40 @@ export default function BaggedTaggedSection() {
 
       <section className="py-20 sm:py-28 bg-bg-card">
         <div className="mx-auto max-w-7xl px-6 sm:px-8">
-          <div className="grid gap-10 sm:grid-cols-3">
-            {highlights.map(({ icon: Icon, title, description }) => (
-              <div key={title} className="flex flex-col gap-3">
-                <Icon className="text-orange-bright" size={28} />
-                <h3 className="font-display uppercase tracking-wide text-lg text-text">
-                  {title}
-                </h3>
-                <p className="text-sm text-text-muted leading-relaxed">
-                  {description}
-                </p>
+          <div className="grid gap-8 sm:grid-cols-3">
+            {highlights.map(({ icon: Icon, title, description, image }) => (
+              <div
+                key={title}
+                className="flex flex-col overflow-hidden rounded-sm border border-border bg-bg"
+              >
+                <div className="relative aspect-[4/3] flex flex-col items-center justify-center gap-2 bg-bg-elevated text-text-muted/60 overflow-hidden">
+                  {image ? (
+                    <Image
+                      src={image}
+                      alt={title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover"
+                    />
+                  ) : (
+                    <>
+                      <ImageIcon size={28} strokeWidth={1.5} />
+                      <span className="text-[10px] uppercase tracking-widest">
+                        Photo Coming Soon
+                      </span>
+                    </>
+                  )}
+                </div>
+
+                <div className="p-6 flex flex-col gap-3">
+                  <Icon className="text-orange-bright" size={24} />
+                  <h3 className="font-display uppercase tracking-wide text-lg text-text">
+                    {title}
+                  </h3>
+                  <p className="text-sm text-text-muted leading-relaxed">
+                    {description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
