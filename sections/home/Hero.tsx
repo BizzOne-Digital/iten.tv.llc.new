@@ -33,8 +33,8 @@ export default function Hero() {
           className="animate-fade-up text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold uppercase leading-[0.95] text-text"
           style={{ animationDelay: "0.1s" }}
         >
-          America&apos;s <br />
-          Wildest <span className="text-gradient-orange">Baggers</span>
+          <span className="text-[#E4362B]">America&apos;s</span> <br />
+          Wildest <span className="text-[#2F6FED]">Baggers</span>
         </h1>
 
         <p

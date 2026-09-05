@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import SectionHeading from "@/components/ui/SectionHeading";
 
 const films = [
   {
@@ -27,12 +26,10 @@ export default function FeaturedFilms() {
   return (
     <section className="py-24 sm:py-32 bg-bg-elevated">
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
-        <SectionHeading
-          eyebrow="The Collection"
-          title="Featured"
-          highlight="Films"
-          align="left"
-        />
+        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-display font-semibold uppercase text-text">
+          <span className="text-[#2F6FED]">The</span>{" "}
+          <span className="text-gradient-orange">Films</span>
+        </h2>
 
         <div className="mt-14 grid gap-8 md:grid-cols-2">
           {films.map((film) => (

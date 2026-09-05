@@ -5,12 +5,18 @@ import MobileNav from "./MobileNav";
 const links = [
   { href: "/", label: "Home" },
   { href: "/blog", label: "Blog / News" },
-  { href: "/contact", label: "Contact" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 relative bg-bg/85 backdrop-blur-md border-b border-border">
+      <div className="bg-gradient-to-r from-orange-dim via-orange to-chrome-2 py-1">
+        <p className="text-center text-[11px] sm:text-xs font-display uppercase tracking-[0.4em] text-bg font-semibold">
+          iTEN.TV Presents
+        </p>
+      </div>
+
       <div className="mx-auto max-w-7xl px-6 sm:px-8 h-20 flex items-center justify-between">
         <Logo />
 
