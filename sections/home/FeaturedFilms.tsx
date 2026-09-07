@@ -8,7 +8,7 @@ const films = [
     tagline: "America's Wildest Baggers",
     description:
       "The original film that started it all — an inside look at the builders and riders pushing bagger culture to the edge.",
-    image: "/2ndimg2.png",
+    image: "/bike1.jpg",
     accent: "chrome",
   },
   {
@@ -17,7 +17,7 @@ const films = [
     tagline: "Ten Years In",
     description:
       "A decade later — revisiting the legends, the builds, and the culture that never slowed down.",
-    image: "/2ndimg3.png",
+    image: "/bike2.jpg",
     accent: "orange",
   },
 ];

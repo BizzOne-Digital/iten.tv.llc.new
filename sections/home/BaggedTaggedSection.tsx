@@ -43,8 +43,8 @@ export default function BaggedTaggedSection() {
           <div className="flex justify-center lg:justify-start">
             <div className="bg-white rounded-md p-6 shadow-lg">
               <Image
-                src="/logo1.png"
-                alt="Bagged & Tagged logo"
+                src="/home1.png"
+                alt="Bagged & Tagged cover art"
                 width={320}
                 height={320}
                 className="h-40 sm:h-48 w-auto object-contain"
