@@ -37,15 +37,13 @@ export default function BaggedTaggedSection() {
 
         <div className="relative mx-auto max-w-7xl px-6 sm:px-8 grid gap-12 lg:grid-cols-2 items-center">
           <div className="flex justify-center lg:justify-start">
-            <div className="bg-white rounded-md p-6 shadow-lg border border-black/5">
-              <Image
-                src="/home1.png"
-                alt="Bagged & Tagged cover art"
-                width={709}
-                height={831}
-                className="h-64 sm:h-80 w-auto object-contain"
-              />
-            </div>
+            <Image
+              src="/home1-removebg-preview.png"
+              alt="Bagged & Tagged cover art"
+              width={709}
+              height={831}
+              className="h-64 sm:h-80 w-auto object-contain drop-shadow-xl"
+            />
           </div>
 
           <div>
