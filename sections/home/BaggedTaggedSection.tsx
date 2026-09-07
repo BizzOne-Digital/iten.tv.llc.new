@@ -1,23 +1,19 @@
 import Image from "next/image";
-import { Mic, Music2, Sparkles, ImageIcon } from "lucide-react";
 
 const highlights = [
   {
-    icon: Mic,
     title: "Interviews",
     description:
       "Featuring in-depth interviews with tips, tricks and myths about building a custom bagger — straight from the builders and owners.",
     image: "/new/interviews.jpg" as string | undefined,
   },
   {
-    icon: Music2,
     title: "Music",
     description:
       "A soundtrack built to suit these bikes. Original music from some of the best composers in the gaming industry.",
     image: "/new/speaker.jpg" as string | undefined,
   },
   {
-    icon: Sparkles,
     title: "Unique",
     description:
       "Watch something unique. This isn't some ol' bike film like the rest — time to break away from the sheep.",
@@ -28,8 +24,8 @@ const highlights = [
 export default function BaggedTaggedSection() {
   return (
     <>
-      <section className="relative py-24 sm:py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative py-24 sm:py-32 overflow-hidden bg-[#F5F3EF]">
+        <div className="absolute inset-0 opacity-[0.06]">
           <Image
             src="/2ndimg1.jpg"
             alt=""
@@ -41,7 +37,7 @@ export default function BaggedTaggedSection() {
 
         <div className="relative mx-auto max-w-7xl px-6 sm:px-8 grid gap-12 lg:grid-cols-2 items-center">
           <div className="flex justify-center lg:justify-start">
-            <div className="bg-white rounded-md p-6 shadow-lg">
+            <div className="bg-white rounded-md p-6 shadow-lg border border-black/5">
               <Image
                 src="/home1.png"
                 alt="Bagged & Tagged cover art"
@@ -53,10 +49,10 @@ export default function BaggedTaggedSection() {
           </div>
 
           <div>
-            <p className="font-display uppercase tracking-[0.3em] text-sm text-chrome-2 mb-3">
+            <p className="font-display uppercase tracking-[0.3em] text-sm text-orange-bright mb-3">
               An Original, Easy-To-Watch Documentary
             </p>
-            <div className="space-y-4 text-text-muted leading-relaxed">
+            <div className="space-y-4 text-neutral-600 leading-relaxed">
               <p>
                 From the studios of iTEN.TV comes our new documentary film,
                 &ldquo;Bagged &amp; Tagged.&rdquo; We go on the road to find
@@ -86,14 +82,17 @@ export default function BaggedTaggedSection() {
 
       <section className="py-20 sm:py-28 bg-bg-card">
         <div className="mx-auto max-w-7xl px-6 sm:px-8">
+          <h2 className="text-center font-display uppercase tracking-widest text-2xl text-text mb-12">
+            Highlights
+          </h2>
           <div className="grid gap-8 sm:grid-cols-3">
-            {highlights.map(({ icon: Icon, title, description, image }) => (
+            {highlights.map(({ title, description, image }) => (
               <div
                 key={title}
-                className="flex flex-col overflow-hidden rounded-sm border border-border bg-bg"
+                className="flex flex-col overflow-hidden rounded-sm border border-border bg-bg text-center"
               >
-                <div className="relative aspect-[4/3] flex flex-col items-center justify-center gap-2 bg-bg-elevated text-text-muted/60 overflow-hidden">
-                  {image ? (
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  {image && (
                     <Image
                       src={image}
                       alt={title}
@@ -101,19 +100,11 @@ export default function BaggedTaggedSection() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover"
                     />
-                  ) : (
-                    <>
-                      <ImageIcon size={28} strokeWidth={1.5} />
-                      <span className="text-[10px] uppercase tracking-widest">
-                        Photo Coming Soon
-                      </span>
-                    </>
                   )}
                 </div>
 
-                <div className="p-6 flex flex-col gap-3">
-                  <Icon className="text-orange-bright" size={24} />
-                  <h3 className="font-display uppercase tracking-wide text-lg text-text">
+                <div className="p-6 flex flex-col gap-3 items-center">
+                  <h3 className="font-display uppercase tracking-wide text-lg text-orange-bright">
                     {title}
                   </h3>
                   <p className="text-sm text-text-muted leading-relaxed">

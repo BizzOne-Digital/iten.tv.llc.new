@@ -64,7 +64,7 @@ export default function Home() {
         highlight="For You"
         subtitle="Some of the talent we feature in this film."
         people={filmOneCredits}
-        tone="elevated"
+        tone="light"
       />
       <VideoTrailer label="Bagged & Tagged — Trailer" youtubeId="IDKmXgFFJZU" />
 

@@ -4,6 +4,7 @@ type SectionHeadingProps = {
   highlight?: string;
   description?: string;
   align?: "left" | "center";
+  tone?: "dark" | "light";
 };
 
 export default function SectionHeading({
@@ -12,8 +13,11 @@ export default function SectionHeading({
   highlight,
   description,
   align = "left",
+  tone = "dark",
 }: SectionHeadingProps) {
   const alignClasses = align === "center" ? "text-center mx-auto" : "text-left";
+  const titleColor = tone === "light" ? "text-neutral-900" : "text-text";
+  const descriptionColor = tone === "light" ? "text-neutral-600" : "text-text-muted";
 
   return (
     <div className={`max-w-2xl ${alignClasses}`}>
@@ -22,11 +26,11 @@ export default function SectionHeading({
           {eyebrow}
         </p>
       )}
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold uppercase text-text">
+      <h2 className={`text-3xl sm:text-4xl md:text-5xl font-display font-semibold uppercase ${titleColor}`}>
         {title} {highlight && <span className="text-gradient-orange">{highlight}</span>}
       </h2>
       {description && (
-        <p className="mt-4 text-base text-text-muted leading-relaxed">
+        <p className={`mt-4 text-base leading-relaxed ${descriptionColor}`}>
           {description}
         </p>
       )}
