@@ -8,7 +8,7 @@ const films = [
     tagline: "America's Wildest Baggers",
     description:
       "The original film that started it all — an inside look at the builders and riders pushing bagger culture to the edge.",
-    image: "/img1.png",
+    image: "/2ndimg2.png",
     accent: "chrome",
   },
   {
@@ -17,7 +17,7 @@ const films = [
     tagline: "Ten Years In",
     description:
       "A decade later — revisiting the legends, the builds, and the culture that never slowed down.",
-    image: "/img2.png",
+    image: "/2ndimg3.png",
     accent: "orange",
   },
 ];
@@ -35,17 +35,18 @@ export default function FeaturedFilms() {
           {films.map((film) => (
             <div
               key={film.title}
-              className="group relative overflow-hidden rounded-sm border border-border bg-bg-card"
+              className={`group relative overflow-hidden rounded-sm border-2 bg-bg-card ${
+                film.accent === "orange" ? "border-orange/70" : "border-[#2F6FED]/70"
+              }`}
             >
-              <div className="relative aspect-[16/10]">
+              <div className="relative h-[420px] flex items-center justify-center bg-bg p-6">
                 <Image
                   src={film.image}
-                  alt={`${film.title} film still`}
+                  alt={`${film.title} cover art`}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain p-6 transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/40 to-transparent" />
               </div>
 
               <div className="p-8">
