@@ -39,13 +39,13 @@ export default function FeaturedFilms() {
                 film.accent === "orange" ? "border-orange/70" : "border-[#2F6FED]/70"
               }`}
             >
-              <div className="relative h-[420px] flex items-center justify-center bg-bg p-6">
+              <div className="relative aspect-[567/817] bg-bg">
                 <Image
                   src={film.image}
                   alt={`${film.title} cover art`}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-contain p-6 transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
 

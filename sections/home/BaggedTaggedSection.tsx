@@ -45,9 +45,9 @@ export default function BaggedTaggedSection() {
               <Image
                 src="/home1.png"
                 alt="Bagged & Tagged cover art"
-                width={320}
-                height={320}
-                className="h-40 sm:h-48 w-auto object-contain"
+                width={709}
+                height={831}
+                className="h-64 sm:h-80 w-auto object-contain"
               />
             </div>
           </div>
