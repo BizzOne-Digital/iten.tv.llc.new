@@ -66,7 +66,7 @@ export default function Home() {
         people={filmOneCredits}
         tone="elevated"
       />
-      <VideoTrailer label="Bagged & Tagged — Trailer Coming Soon" />
+      <VideoTrailer label="Bagged & Tagged — Trailer" youtubeId="IDKmXgFFJZU" />
 
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <div className="section-divider" />
@@ -82,7 +82,7 @@ export default function Home() {
         people={filmTwoGuests}
         tone="graphite"
       />
-      <VideoTrailer label="Bagged & Tagged 2 — Trailer Coming Soon" />
+      <VideoTrailer label="Bagged & Tagged 2 — Trailer" youtubeId="zPnd7pb63KU" />
       <PeopleGrid
         eyebrow="On Set"
         title="Behind The"
