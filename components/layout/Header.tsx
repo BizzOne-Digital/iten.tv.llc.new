@@ -11,10 +11,15 @@ const links = [
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 relative bg-bg/85 backdrop-blur-md border-b border-border">
-      <div className="bg-gradient-to-r from-orange-dim via-orange to-chrome-2 py-1">
-        <p className="text-center text-[11px] sm:text-xs font-display uppercase tracking-[0.4em] text-bg font-semibold">
-          iTEN.TV Presents
-        </p>
+      <div className="bg-gradient-to-r from-[#C9A876] to-[#5B8FC7] py-1.5">
+        <div className="mx-auto max-w-7xl px-6 sm:px-8 flex items-center gap-2">
+          <span className="font-display text-sm sm:text-base font-bold uppercase tracking-wide text-white">
+            iTEN.TV
+          </span>
+          <span className="font-display text-sm sm:text-base font-bold uppercase tracking-wide text-black">
+            Presents
+          </span>
+        </div>
       </div>
 
       <div className="mx-auto max-w-7xl px-6 sm:px-8 h-20 flex items-center justify-between">
