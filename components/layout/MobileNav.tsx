@@ -18,7 +18,7 @@ export default function MobileNav() {
       <button
         aria-label={open ? "Close menu" : "Open menu"}
         onClick={() => setOpen((v) => !v)}
-        className="p-2 text-text hover:text-orange-bright transition-colors"
+        className="p-2 text-black hover:text-black/70 transition-colors"
       >
         {open ? <X size={26} /> : <Menu size={26} />}
       </button>
