@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import MobileNav from "./MobileNav";
 
 const links = [
@@ -9,15 +10,20 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-gradient-to-r from-[#C9A876] to-[#5B8FC7] border-b border-black/10">
-      <div className="mx-auto max-w-7xl px-6 sm:px-8 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-baseline gap-2">
-          <span className="font-display text-xl sm:text-2xl font-bold uppercase tracking-wide text-white">
-            iTEN.TV
-          </span>
-          <span className="font-display text-xs sm:text-sm font-bold uppercase tracking-wide text-black">
-            Presents
-          </span>
+    <header
+      className="sticky top-0 z-50 border-b border-black/10"
+      style={{ background: "linear-gradient(#a8daef, #b49f7f)" }}
+    >
+      <div className="mx-auto max-w-7xl px-6 sm:px-8 h-24 flex items-center justify-between">
+        <Link href="/" className="shrink-0">
+          <Image
+            src="/bagtag/assets/img/iten_tv_black.png"
+            alt="iTEN.TV"
+            width={400}
+            height={180}
+            className="h-14 sm:h-16 w-auto object-contain"
+            priority
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">

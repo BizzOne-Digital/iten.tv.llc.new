@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 
 export default function Hero() {
   return (
-    <section className="relative aspect-video min-h-[620px] max-h-[85vh] w-full overflow-hidden bg-bg">
+    <section className="relative h-[75vh] min-h-[500px] w-full overflow-hidden bg-bg">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url(/hero-bagger.png)" }}
