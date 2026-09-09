@@ -63,6 +63,14 @@ export default function Footer() {
           >
             Shopping Cart
           </a>
+          <a
+            href="https://www.baggedandtaggedfilms.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-text-muted hover:text-orange-bright transition-colors"
+          >
+            Bagged and Tagged Films
+          </a>
         </div>
 
         <div />
