@@ -15,7 +15,7 @@ export default function Header() {
       style={{ background: "linear-gradient(#a8daef, #b49f7f)" }}
     >
       <div className="mx-auto max-w-7xl px-6 sm:px-8 h-24 flex items-center justify-between">
-        <Link href="/" className="shrink-0">
+        <Link href="/" className="shrink-0 flex items-center gap-2">
           <Image
             src="/bagtag/assets/img/iten_tv_black.png"
             alt="iTEN.TV"
@@ -24,6 +24,9 @@ export default function Header() {
             className="h-14 sm:h-16 w-auto object-contain"
             priority
           />
+          <span className="hidden sm:inline font-display text-lg font-bold uppercase tracking-wide text-black">
+            Presents
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">

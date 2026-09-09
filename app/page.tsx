@@ -5,7 +5,6 @@ import VideoTrailer from "@/sections/home/VideoTrailer";
 import SpecialGuestsSection from "@/sections/home/SpecialGuestsSection";
 import BagtagTwoDivider from "@/sections/home/BagtagTwoDivider";
 import BaggedTagged2Section from "@/sections/home/BaggedTagged2Section";
-import HighlightsSection from "@/sections/home/HighlightsSection";
 import WhosNewSection from "@/sections/home/WhosNewSection";
 import BuyFilmSection from "@/sections/home/BuyFilmSection";
 import ChopperVisionSection from "@/sections/home/ChopperVisionSection";
@@ -20,7 +19,6 @@ export default function Home() {
       <SpecialGuestsSection />
       <BagtagTwoDivider />
       <BaggedTagged2Section />
-      <HighlightsSection />
       <VideoTrailer
         label="Bagged & Tagged 2 — Trailer"
         youtubeId="zPnd7pb63KU"
