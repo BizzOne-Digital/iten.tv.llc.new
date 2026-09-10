@@ -103,6 +103,20 @@ export default function ChopperVisionSection() {
           </div>
         </div>
       </div>
+
+      <div className="bg-black py-4">
+        <div className="mx-auto max-w-5xl px-6 sm:px-8">
+          <div className="relative aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/CZ0PdLDdG4k"
+              title="Insane Custom Choppers You Need to See"
+              className="absolute inset-0 h-full w-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
