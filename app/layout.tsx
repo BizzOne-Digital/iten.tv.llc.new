@@ -22,6 +22,15 @@ export const metadata: Metadata = {
   },
   description:
     "iTEN.TV is home to Bagged & Tagged — original documentary films chronicling America's wildest bagger motorcycle culture.",
+  icons: {
+    icon: [
+      { url: "/bagtag/assets/img/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/bagtag/assets/img/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/bagtag/assets/img/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/bagtag/assets/img/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/bagtag/assets/img/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
