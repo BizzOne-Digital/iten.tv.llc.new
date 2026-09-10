@@ -4,8 +4,6 @@ const bikeImages = [
   "/bagtag/assets/img/chopper_001.jpg",
   "/bagtag/assets/img/chopper_002.jpg",
   "/bagtag/assets/img/chopper_003.jpg",
-  "/bagtag/assets/img/chopper_004.jpg",
-  "/bagtag/assets/img/chopper_005.jpg",
 ];
 
 export default function ChopperVisionSection() {
@@ -21,8 +19,18 @@ export default function ChopperVisionSection() {
         />
       </div>
 
-      <div className="py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-6 sm:px-8">
+      <div className="relative py-16 sm:py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/bagtag/assets/img/chopper_005.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            aria-hidden
+          />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
           <p className="text-center font-display italic font-bold text-lg text-white mb-12">
             From the studio that brought you the Bagged and Tagged Films -
             iTEN.TV

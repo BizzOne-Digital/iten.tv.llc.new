@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CaptionedImageGrid from "@/components/ui/CaptionedImageGrid";
 
 const items = [
@@ -14,8 +15,12 @@ const items = [
 
 export default function WhosNewSection() {
   return (
-    <section className="py-24 sm:py-32 bg-[#171717]">
-      <div className="mx-auto max-w-7xl px-6 sm:px-8">
+    <section className="relative py-24 sm:py-32 bg-[#171717] overflow-hidden">
+      <div className="absolute inset-0 opacity-20">
+        <Image src="/background4.jpg" alt="" fill className="object-cover" aria-hidden />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
         <h2 className="text-center font-display italic font-bold text-3xl sm:text-4xl text-orange-bright mb-14">
           Who&apos;s In The Film This Time?
         </h2>

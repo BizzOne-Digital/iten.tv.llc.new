@@ -2,8 +2,12 @@ import Image from "next/image";
 
 export default function BaggedTagged2Section() {
   return (
-    <section className="py-24 sm:py-32 bg-[#171717]">
-      <div className="mx-auto max-w-7xl px-6 sm:px-8 grid gap-12 lg:grid-cols-2 items-center">
+    <section className="relative py-24 sm:py-32 bg-[#171717] overflow-hidden">
+      <div className="absolute inset-0 opacity-20">
+        <Image src="/bagtagged2-bg.jpg" alt="" fill className="object-cover" aria-hidden />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-6 sm:px-8 grid gap-12 lg:grid-cols-2 items-center">
         <div>
           <p className="font-display italic font-bold text-sm text-orange-bright mb-4 text-center">
             Get Ready For The Ride Of A Lifetime

@@ -21,12 +21,12 @@ export default function Home() {
       <BagtagTwoDivider />
       <BaggedTagged2Section />
       <HighlightsSection />
+      <WhosNewSection />
       <VideoTrailer
         label="Bagged & Tagged 2 — Trailer"
         youtubeId="zPnd7pb63KU"
         outerBg="bg-[#171717]"
       />
-      <WhosNewSection />
       <BuyFilmSection />
       <ChopperVisionSection />
     </>

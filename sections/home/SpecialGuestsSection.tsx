@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CaptionedImageGrid from "@/components/ui/CaptionedImageGrid";
 
 const items = [
@@ -20,8 +21,12 @@ const items = [
 
 export default function SpecialGuestsSection() {
   return (
-    <section className="py-24 sm:py-32 bg-[#F5F3EF]">
-      <div className="mx-auto max-w-7xl px-6 sm:px-8">
+    <section className="relative py-24 sm:py-32 bg-[#F5F3EF] overflow-hidden">
+      <div className="absolute inset-0 opacity-[0.08]">
+        <Image src="/2ndimg1.jpg" alt="" fill className="object-cover" aria-hidden />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
         <h2 className="text-center font-display italic font-bold text-3xl sm:text-4xl text-[#0067ff] mb-3">
           Special Guests
         </h2>
