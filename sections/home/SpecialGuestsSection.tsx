@@ -22,7 +22,7 @@ const items = [
 export default function SpecialGuestsSection() {
   return (
     <section className="relative py-24 sm:py-32 bg-[#F5F3EF] overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.08]">
+      <div className="absolute inset-0 opacity-20">
         <Image src="/2ndimg1.jpg" alt="" fill className="object-cover" aria-hidden />
       </div>
 
